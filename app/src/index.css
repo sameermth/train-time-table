@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Poiret+One|Quicksand');
+.app-container{
+	
+	text-align: center;
+	
+}
+
+.title{
+	font-family: 'Quicksand', sans-serif;
+}
+
+.route{
+ text-align: center;
+}
+
+.route-table{
+	width: 80%;
+	margin-left: 10%;
+	border: 1px solid #000000;
+	border-radius: 5px;
+}
+
+.table-heading{
+	font-family:'Quicksand';
+}
+
+.table-body{
+	font-family: 'Poiret One', cursive;
+	
+}
+
+.form input{
+	border-radius: 3px;
+	margin-right: 2%;
+}
+.form button{
+	border-radius: 3px;
+}
+
+.error{
+	color: red;
+}
