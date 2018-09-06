@@ -9,6 +9,8 @@ app/coverage
 # production
 app/build
 
+#database
+database
 # misc
 .DS_Store
 .env.local
