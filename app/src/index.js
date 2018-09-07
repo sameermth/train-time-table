@@ -21,7 +21,7 @@ class App extends React.Component{
 	
 	search(event){
 		event.preventDefault();
-		const {informationAvailable, trainNumber, trainTimeTables } = this.state;
+		const {informationAvailable, trainNumber, trainTimeTables, error } = this.state;
 		
 		$.ajax({ type: "POST", 
 				url: "http://localhost/train/index.php", 
@@ -34,7 +34,8 @@ class App extends React.Component{
 					if(myArray.length>0){
 					this.setState({
 						trainTimeTables: myArray,
-						informationAvailable: true
+						informationAvailable: true,
+						error: error!=null?null:null
 					})
 					}
 					else{
@@ -124,7 +125,12 @@ class App extends React.Component{
 			//JSON.stringify(this.state, null, 2)
 		}
 		</pre>
-		{informationAvailable ? display : defaultDisplay}
+		{//informationAvailable ? display : defaultDisplay
+			defaultDisplay
+		}
+		{
+			informationAvailable?display: null
+		}
 		</div>
 		)
 	}
